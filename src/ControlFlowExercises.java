@@ -1,3 +1,5 @@
+import java.util.Arrays;
+import java.util.Scanner;
 public class ControlFlowExercises {
     public static void main(String[] args) {
 
@@ -43,24 +45,44 @@ public class ControlFlowExercises {
 //            System.out.println(squareTwo);
 //            squareTwo*=squareTwo;
 //        }
-//        while (squareTwo < 100000);
+//        while (squareTwo < 1000000);
 
         for(long i=2; i<1000000; i*=i){
             System.out.println(i);
         }
 
 
-        for(int i=1; i<=100; i++){
-            if(i % 3 == 0 && i % 5 == 0){
-                System.out.println(i + ": FiZzBuZz");
-            }else if(i % 3 == 0){
-                System.out.println(i + ": fIzZ");
-            } else if (i % 5 == 0) {
-                System.out.println(i + ": BuZz");
-            } else {
-                System.out.println(i);
-            }
+//        for(int i=1; i<=100; i++){
+//            if(i % 3 == 0 && i % 5 == 0){
+//                System.out.println(i + ": FiZzBuZz");
+//            }else if(i % 3 == 0){
+//                System.out.println(i + ": fIzZ");
+//            } else if (i % 5 == 0) {
+//                System.out.println(i + ": BuZz");
+//            } else {
+//                System.out.println(i);
+//            }
+//        }
+
+String userChoice = "";
+Scanner yesNo = new Scanner(System.in);
+    do {
+        Scanner promptNumb = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int numbInput = Integer.parseInt(promptNumb.nextLine());
+        System.out.println("number | squared | cubed");
+        System.out.println("------ | ------- | -----");
+        for (long i = 1; i <= numbInput; i++) {
+            System.out.printf("%-7d| %-8d| %-5d\n", i, i * i, i * i * i);
         }
+        System.out.println("Would you like to enter another number, Y or N?");
+        userChoice = yesNo.next();
+    } while(userChoice.equals("y") || userChoice.equals("yes"));
+
+
+
+
+
 
 
     }
