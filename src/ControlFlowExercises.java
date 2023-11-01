@@ -20,9 +20,9 @@ public class ControlFlowExercises {
 //        }
 //        while(doWhile*2 <= 100);
 
-        for(int i=0; i<=100; i++){
-            System.out.println(i++);
-        }
+//        for(int i=0; i<=100; i++){
+//            System.out.println(i++);
+//        }
 
 
         //Alter your loop to count backwards by 5's from 100 to -10.
@@ -33,6 +33,10 @@ public class ControlFlowExercises {
 //        }
 //        while (backWards >= -10);
 
+//        for(int i=100; i>=-10; i-=5){
+//            System.out.println(i);
+//        }
+
 //Create a do-while loop that starts at 2, and displays the number squared on each line while the number is less than 1,000,000. Output should equal:
 //        long squareTwo = 2;
 //        do{
@@ -41,7 +45,9 @@ public class ControlFlowExercises {
 //        }
 //        while (squareTwo < 100000);
 
-
+        for(long i=2; i<1000000; i*=i){
+            System.out.println(i);
+        }
 
 
 
