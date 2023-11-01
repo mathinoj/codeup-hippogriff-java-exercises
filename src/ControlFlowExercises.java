@@ -8,13 +8,6 @@ public class ControlFlowExercises {
         }
 
 //Create a do-while loop that will count by 2's starting with 0 and ending at 100. Follow each number with a new line.
-
-        //    A do or do-while loop is the same as a while loop, except that the body of the loop will execute before the condition is evaluated.
-
-//    You should use a do loop over a while loop if you want the code inside the body of the loop to evaluate at least once, or you want to the loop body to be evaluated before the loop condition.
-
-//            do {
-//        System.out.println("You will see this despite the condition!");
 //    } while (false);
 //        int doWhile = 1;
 //        do{
@@ -26,13 +19,20 @@ public class ControlFlowExercises {
 
 
         //Alter your loop to count backwards by 5's from 100 to -10.
-        int backWards = 100;
-        do{
-            System.out.println(backWards);
-            backWards -= 5;
-        }
-        while (backWards >= -10);
+//        int backWards = 100;
+//        do{
+//            System.out.println(backWards);
+//            backWards -= 5;
+//        }
+//        while (backWards >= -10);
 
+//Create a do-while loop that starts at 2, and displays the number squared on each line while the number is less than 1,000,000. Output should equal:
+        long squareTwo = 2;
+        do{
+            System.out.println(squareTwo);
+            squareTwo*=squareTwo;
+        }
+        while (squareTwo < 100000);
 
 
 
