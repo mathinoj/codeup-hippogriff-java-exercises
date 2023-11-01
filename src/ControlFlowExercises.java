@@ -16,12 +16,22 @@ public class ControlFlowExercises {
 //            do {
 //        System.out.println("You will see this despite the condition!");
 //    } while (false);
-        int doWhile = 1;
+//        int doWhile = 1;
+//        do{
+//            System.out.println(doWhile*2);
+//            doWhile++;
+//        }
+//        while(doWhile*2 <= 100);
+
+
+
+        //Alter your loop to count backwards by 5's from 100 to -10.
+        int backWards = 100;
         do{
-            System.out.println(doWhile*2);
-            doWhile++;
+            System.out.println(backWards);
+            backWards -= 5;
         }
-        while(doWhile*2 <= 100);
+        while (backWards >= -10);
 
 
 
