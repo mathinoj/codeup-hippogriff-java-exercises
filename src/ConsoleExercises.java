@@ -32,7 +32,18 @@ public class ConsoleExercises {
         Scanner sentenceScanner = new Scanner(System.in);
         System.out.print("Enter a sentence: ");
         String sentence = sentenceScanner.nextLine();
-        System.out.printf("Here you doh: %s", sentence);
+        System.out.printf("Here you doh: %s%n", sentence);
+
+        Scanner lengthWidth = new Scanner(System.in);
+        System.out.print("Enter length: ");
+        String length = lengthWidth.nextLine();
+        System.out.print("Enter width: ");
+        String width = lengthWidth.nextLine();
+        int lengthToInt = Integer.parseInt(length);
+        int widthToInt = Integer.parseInt(width);
+        System.out.printf("Area is: " +lengthToInt*widthToInt +"%n");
+        int perimeter = (lengthToInt*2) + (widthToInt*2);
+        System.out.printf("Perimeter is: %d%n", perimeter);
 
     }
 }
