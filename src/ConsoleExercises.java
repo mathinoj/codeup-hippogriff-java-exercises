@@ -23,11 +23,16 @@ public class ConsoleExercises {
 
         Scanner wordScanner = new Scanner(System.in);
         System.out.print("Enter 3 words here: ");
-        String userInput1 = wordScanner.nextLine();
-        String userInput2 = wordScanner.nextLine();
-        String userInput3 = wordScanner.nextLine();
+        String userInput1 = wordScanner.next();
+        String userInput2 = wordScanner.next();
+        String userInput3 = wordScanner.next();
         System.out.printf("Word 1: %s%nWord 2: %s%nWord 3: %s%n", userInput1, userInput2, userInput3);
 //        System.out.printf("Word 2: %s%n", userInput2);
+
+        Scanner sentenceScanner = new Scanner(System.in);
+        System.out.print("Enter a sentence: ");
+        String sentence = sentenceScanner.nextLine();
+        System.out.printf("Here you doh: %s", sentence);
 
     }
 }
