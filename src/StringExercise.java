@@ -12,6 +12,6 @@ public class StringExercise {
         System.out.println(stringBasics);
 
 
-//        String check
+
     }
 }
