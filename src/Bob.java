@@ -7,11 +7,13 @@ public class Bob {
         Scanner askBob = new Scanner(System.in);
             System.out.print("Ask Bob a q: ");
             String yourQ = askBob.nextLine();
+            System.out.println(yourQ.length());
             if (yourQ.endsWith("?")) {
                 System.out.println("Sure.");
             } else if (yourQ.endsWith("!")) {
                 System.out.println("Whoa, chill out!");
             } else if (yourQ.isEmpty()) {
+//            } else if (yourQ.length() == 0) {
                 System.out.println("Fine. Be that guey!");
             } else {
                 System.out.println("Whatevz.");
