@@ -10,5 +10,8 @@ public class faveAminal {
         return String.format("A %s goes %s.", name, sound);
     }
 
-
+    public faveAminal(String name, String sound) {
+        this.name = name;
+        this.sound = sound;
+    }
 }
