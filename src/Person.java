@@ -13,11 +13,28 @@ public class Person {
 //    public String sayHello(){
     public void sayHello(){
 //TODO: print a message to the console using the person's name
-        System.out.println("There goes " + this.name +"!");
+        System.out.println("There goes " + name +"!");
+    }
+
+    public Person(){
+    }
+
+    public Person(String name){
+        this.name = name;
     }
     public static void main(String[] args) {
         Person mutt = new Person();
         mutt.setName("Bigg Mutt Dawg");
         mutt.sayHello();
+
+//        Person matt = new Person();
+//        matt.setName("Big Mat Dogg");
+//        matt.sayHello();
+        Person matt = new Person("Big Mat Dogg");
+        matt.sayHello();
+
     }
+
+
+
 }
