@@ -25,7 +25,7 @@ public class Input {
         return userInput.equalsIgnoreCase("y") || userInput.equalsIgnoreCase("yes");
     }
 
-    public int getInt(int min, int max) { //THIS getINT and the one below are considers method overloading cuz they have different amounts of parameters, and usually the ones with the most parameters are below the one with the least
+    public int getInt(int min, int max) {
         int userInt;
         do {
             System.out.printf("Enter a number between %d and %d: %n", min, max);
@@ -50,8 +50,10 @@ public class Input {
     }
 
       public double getDouble(){
-//          System.out.println("Enter an integer:");
+          System.out.println("Enter an integer:");
           return Double.parseDouble(String.valueOf(this.scanner.nextLine()));
+//          return scanner.nextDouble();
+//          ^^THIS IS WHAT JAVIER USED^^
       }
 
 
